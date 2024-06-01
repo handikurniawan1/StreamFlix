@@ -1,0 +1,74 @@
+/* Detail.css */
+.detail-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: black;
+}
+
+.detail-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.detail-header img {
+    max-width: 200px;
+    border-radius: 8px;
+}
+
+.detail-title {
+    font-size: 2em;
+    margin: 0;
+}
+
+.detail-overview {
+    margin: 20px 0;
+    line-height: 1.6;
+}
+
+.detail-runtime {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.detail-cast {
+    margin: 20px 0;
+}
+
+.detail-cast ul {
+    list-style: none;
+    padding: 0;
+}
+
+.detail-cast li {
+    margin: 5px 0;
+}
+
+.detail-price {
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+.detailAction {
+    display: flex;
+    justify-content: center;
+}
+
+.detailAction button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.detailAction button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}

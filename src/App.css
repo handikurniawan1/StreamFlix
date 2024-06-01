@@ -1,0 +1,146 @@
+
+header{
+  display: flex;
+  background-color: #fff;
+  height: 60px;
+  color: #000;
+  text-align: center;
+  font-size: 17px;
+  align-items: center;
+  justify-content: space-between;
+}
+header h1{
+  margin: auto;
+}
+header h3{
+  margin-right: 20px;
+}
+footer{
+  text-align: center;
+  font-size: 12px;
+}
+.app-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+.movie-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow-y: auto;
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.card {
+  background-color: #000000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  width: auto;
+  height: auto;
+  margin: 10px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.card-image {
+  position: relative;
+}
+
+.card-image img {
+  height: 300px;
+  object-fit: cover;
+  border-radius: 15px;
+  border: 0.1px solid white;
+}
+
+.card-content {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: linear-gradient(to top, rgba(30, 27, 38, 1), rgba(30, 27, 38, 0.8), rgba(30, 27, 38, 0));
+  color: #fff;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  padding: 10px;
+  border-radius: 19px;
+  
+}
+
+.card:hover .card-content {
+  opacity: 1;
+  visibility: visible;
+}
+
+.title {
+  margin: 0 30px;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+.rating, .year, .price {
+  margin: 5px 0;
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+}
+
+.actionButton {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-right: 20px;
+  margin-bottom: 15px;
+}
+
+.action {
+  justify-content: center;
+  width: 80px;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  color: #000;
+  font-family: 'Open Sans', sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #000;
+}
+
+.page {
+  background-color: #ffffff;
+  color: #000000;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.prev, .next {
+  padding: 10px;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.prev:hover, .next:hover {
+  background-color: #ccc;
+}
