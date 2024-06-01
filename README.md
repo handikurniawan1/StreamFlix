@@ -26,7 +26,7 @@ StreamFlix adalah sebuah mock beli film untuk masyarakat indonesia yang sedang t
 
    ```bash
    git clone https://github.com/yourusername/streamflix.git
-   cd streamflix
+   cd StreamFlix-main
     ```
 2. Install Dependencies
     ```bash
